@@ -1,0 +1,18 @@
+
+
+print("Carter Bleyl's Paycheck Calculator App") #display app name
+
+hoursWorked = float(input("Please input your hours worked: ")) #input hours worked
+payRate = float(input("Please input your hourly pay: ")) #input hourly pay
+print()
+
+grossPay = hoursWorked * payRate #calculate gross pay
+print("Gross Pay: ", grossPay) #display gross pay
+
+taxRate = (18) #define tax rate
+print("Tax Rate: ", taxRate, "%") #print tax rate
+taxAmount = (grossPay * (taxRate / 100)) # calculate tax amount
+print("Tax Amount: ", taxAmount) #print tax amount
+
+takeHomePay = grossPay - taxAmount #calculate take home pay
+print("Take Home Pay: ", takeHomePay) #display take home pay
